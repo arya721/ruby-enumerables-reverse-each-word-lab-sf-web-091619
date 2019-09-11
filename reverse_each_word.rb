@@ -1,3 +1,8 @@
-def reverse_each_word (array)
-  reverse_each_word("Hello there, and how are you?")
-  #=> "olleH ,ereht dna woh era ?uoy"
+def reverse_each_word(sentence1)
+  words = sentence1.split(" ")
+  array = []
+  array = words.collect do
+    |word| word.reverse
+  end
+  array.join(" ")
+end
